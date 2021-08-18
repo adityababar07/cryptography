@@ -1,5 +1,5 @@
-decrypted = b"abcdefghijklmnopqrstuvwxyz\"!'@#$%^&*()_+=-?/1234567890 "
-encrypted = b"poilkjuyhgtrfedswaqzxcmvbn}[{0798214653+/*-?.<,>@#!$^% |"
+decrypted = b"abcdefghijklmnopqrstuvwxyz "
+encrypted = b"qwertyuiopasdfghjklzxcvbnm "
 
 encrypt_table = bytes.maketrans(decrypted, encrypted)
 decrypt_table = bytes.maketrans(encrypted, decrypted)
@@ -9,12 +9,12 @@ choice = ''
 message = ''
 
 while choice != '0':
-    choice = input("\n Do you want to encrypt or decrypt the message?\n 1 to encrypt, 2 to decrypt or 0 to exit program. :\t ")
+    choice = input("\n Do you want to encrypt or decrypt the message?\n 1 to encrypt, 2 to decrypt or 0 to exit program. ")
 
     if choice == '1':
         message = input('\nEnter message for encryption: ')
         result = message.translate(encrypt_table)
-        print('\n output :- \n' + result + '\n\n')
+        print(result + '\n\n')
 
     elif choice == '2':
         message = input('\nEnter message to decrypt: ')
