@@ -1,4 +1,4 @@
-decrypted = b"abcdefghijklmnopqrstuvwxyz\"!'@#$%^&*()_+=-?/1234567890 "
+decrypted = b"abcdefghijklmnopqrstuvwxyz{:!'@#$%^&*()_+=-?/12345678 90"
 encrypted = b"poilkjuyhgtrfedswaqzxcmvbn}[{0798214653+/*-?.<,>@#!$^% |"
 
 encrypt_table = bytes.maketrans(decrypted, encrypted)
